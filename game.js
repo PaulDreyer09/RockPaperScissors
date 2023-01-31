@@ -83,9 +83,9 @@ const calculateRoundResult = (player_selection, computer_selection) => {
         value: ''
     };
 
-    switch (playerSelection) {
+    switch (result.playerSelection) {
         case 'Rock':
-            switch (computerSelection) {
+            switch (result.computerSelection) {
                 case 'Rock':
                     result.value = RESULT_TYPES.draw;
                     break;
@@ -100,7 +100,7 @@ const calculateRoundResult = (player_selection, computer_selection) => {
             }
             break;
         case 'Paper':
-            switch (computerSelection) {
+            switch (result.computerSelection) {
                 case 'Rock':
                     result.value = RESULT_TYPES.win;
                     break;
@@ -115,7 +115,7 @@ const calculateRoundResult = (player_selection, computer_selection) => {
             }
             break;
         case 'Scissors':
-            switch (computerSelection) {
+            switch (result.computerSelection) {
                 case 'Rock':
                     result.value = RESULT_TYPES.lose;
                     break;
