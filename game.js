@@ -226,6 +226,3 @@ const game = () => {
     alert(`Game results: Wins(${game_results.wins}) | Loses(${game_results.loses}) | Draws(${game_results.draws})`);
     alert('Thank you for playing!');
 }
-
-//Initiate game to start
-//game();
